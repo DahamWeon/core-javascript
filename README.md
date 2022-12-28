@@ -4,6 +4,10 @@
 
 학습이 완료된 학목은 체크박스로 표시됩니다.
 
-- [ ] Code Structure
-- [ ] Variables
-- [ ] Strict Mode
+- [x] Code Structure
+- [x] Variables
+- [x] Strict Mode
+- [x] Global This
+- [x] Data Types
+- [x] Type Conversion
+- [ ] Operations
