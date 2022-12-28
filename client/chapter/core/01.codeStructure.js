@@ -4,7 +4,7 @@
 
 
 // 한 줄 주석 (single line comment)
-2.2('2 `문`은 어떠한 작업을 수행하는 문법 구조 및 명령을 의미합니다.');
+console.log('ECMAScript의 `문`은 어떠한 작업을 수행하는 문법 구조 및 명령을 의미합니다.');
 
 
 // 세미콜론 (semicolons)
