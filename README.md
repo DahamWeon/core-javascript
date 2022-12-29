@@ -10,4 +10,5 @@
 - [x] Global This
 - [x] Data Types
 - [x] Type Conversion
-- [ ] Operations
+- [x] Operations (기본 연산자)
+- [ ] Operations (비교 연산자)
