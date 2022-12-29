@@ -11,4 +11,8 @@
 - [x] Data Types
 - [x] Type Conversion
 - [x] Operations (기본 연산자)
-- [ ] Operations (비교 연산자)
+- [x] Operations (비교 연산자)
+- [ ] Condition (if문과 ?)
+- [ ] Condition (논리 연산자)
+- [ ] Condition (switch문)
+- [ ] Condition (nullish 병합 연산자)
