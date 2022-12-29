@@ -3,8 +3,8 @@
 /* ---------------------------------------------------------------------- */
 
 
-let firstValue = prompt("덧셈한 첫 번째 숫자를 입력하시오: ", 1);
-let secondValue = prompt("덧셈한 두 번째 숫자를 입력하시오: ", 2);
+let firstValue = +prompt("덧셈한 첫 번째 숫자를 입력하시오: ", 1);
+let secondValue = +prompt("덧셈한 두 번째 숫자를 입력하시오: ", 2);
 
 console.log(firstValue + secondValue);
 
