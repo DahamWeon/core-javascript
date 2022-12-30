@@ -15,4 +15,4 @@
 - [x] Condition (if문과 ?)
 - [x] Condition (논리 연산자)
 - [x] Condition (switch문)
-- [ ] Condition (nullish 병합 연산자)
+- [x] Condition (nullish 병합 연산자)
