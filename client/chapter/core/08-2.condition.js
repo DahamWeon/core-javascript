@@ -36,17 +36,16 @@ let whichTruthy = false || "" || [2, 3].length || { thisIsFalsy: true };
 
 // 로그인 구현
 let userName = prompt('사용자 이름을 입력해주세요');
-let pw;
 
-if(userName === 'Admin') {
-  pw = prompt('비밀번호를 입력해주세요');
+if(userName?.toLowerCase() === 'admin') {
+  let pw = prompt('비밀번호를 입력해주세요');
 
-  if(pw === 'TheMaster') {
+  if(pw?.toLowerCase() === 'themaster') {
     console.log('Welcome');
   }else {
     console.log('Canceled');
   }
-} else if(userName === ' ' || userName === null) {
+} else if(userName.replace(/\s*/g,'') === ' ' || userName === null) {
   console.log('Canceled');
 } else {
   console.log('Idk');
