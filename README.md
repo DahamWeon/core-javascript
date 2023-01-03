@@ -16,4 +16,8 @@
 - [x] Condition (논리 연산자)
 - [x] Condition (switch문)
 - [x] Condition (nullish 병합 연산자)
-- [ ] Loop
+- [x] Loop (while)
+- [x] Loop (do~while)
+- [x] Loop (for)
+- [x] Loop (for~in)
+- [x] Loop (for~of)
