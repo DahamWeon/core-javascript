@@ -48,7 +48,7 @@ const user = {
   age:25,
   address: '평택시 동삭동',
   grades: [90,80,100],
-  totalGrades: function () => {   // 그래서 객체 안에서의 method는 일반 함수가 더 좋음
+  totalGrades: function () {   // 그래서 객체 안에서의 method는 일반 함수가 더 좋음
     // let total = 0;
     // this.grades.forEach(function(item) {
     //   total += item

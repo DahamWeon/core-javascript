@@ -23,5 +23,5 @@
 - [x] Loop (for~of)
 - [x] Function (Declaration)
 - [x] Function (Expression)
-- [ ] Function (arrow-function)
-- [ ] Function (recursive)
+- [x] Function (arrow-function)
+- [x] Function (recursive)
