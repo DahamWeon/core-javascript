@@ -26,5 +26,5 @@
 - [x] Function (arrow-function)
 - [x] Function (recursive)
 - [x] Object (Object)
-- [ ] Object (copy by reference)
+- [x] Object (copy by reference)
 - [ ] Object (Garbage Collection)
