@@ -4,4 +4,14 @@ h1 {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+span {
+  display: inline-block;
+  transition: all .5s;
+}
+
+span.is-active {
+  transform: translateY(-300px);
 }
