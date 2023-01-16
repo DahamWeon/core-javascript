@@ -1,5 +1,5 @@
 
-import { clearContents, getInputValue, getNode, getRandom, insertLast,isNumericString, showAlert } from './lib/index.js';
+import { clearContents, getInputValue, getNode, getRandom, insertLast,isNumericString, showAlert, copy } from './lib/index.js';
 import { jujeobData } from "./data/data.js";
 
 const submit = getNode('#submit');
@@ -25,4 +25,14 @@ function clickSubmitHandler(e){
 
 }
 
+function clickCopyHandler(){
+  let text = resultArea.textContent;
+  // navigator.clipboard.writeText(text)
+  copy(text).then(()=>{
+    showAlert('.alert-success','클립보드에 복사가 완료됐습니다',2000);
+  });
+
+}
+
 submit.addEventListener('click',clickSubmitHandler)
+resultArea.addEventListener('click',clickCopyHandler);
