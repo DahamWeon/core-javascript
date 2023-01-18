@@ -1,5 +1,7 @@
 
-import { xhrData,insertLast,xhrPromise } from "./lib/index.js";
+import { xhrData,insertLast,xhrPromise,tiger } from "./lib/index.js";
+
+
 /*
 xhrPromise
 .get('https://jsonplaceholder.typicode.com/users/1')

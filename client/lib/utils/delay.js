@@ -62,7 +62,7 @@ async function delayA() {
   return '완료'
 }
 let result = await delayA()
-console.log(result);  // '완료'가 출력됨
+// console.log(result);  // '완료'가 출력됨
 
 /*
 async function lamen(){
