@@ -52,3 +52,29 @@ export function delayP(options = {}){
 // delayP()
 // .then(res => console.log(res))
 // .catch(err => console.log(err))
+
+
+// async & await
+// async: 일반 함수를 Promise를 반환하는 함수로 만든다.
+// await: 1. Promise가 반환하는 result 를 가져오기.
+//        2. 코드 실행 흐름 제어
+async function delayA() {
+  return '완료'
+}
+let result = await delayA()
+console.log(result);  // '완료'가 출력됨
+
+/*
+async function lamen(){
+  try{
+    await delayP()
+    console.log('계란 넣기');
+    throw new Error('계란 껍질이 들어감..!');
+    await delayP()
+    console.log('그릇에 담기');
+
+  }catch(err){
+    console.log(err);
+  }
+}
+*/
