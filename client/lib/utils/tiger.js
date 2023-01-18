@@ -6,14 +6,14 @@ const defaultOptions = {
   cache: 'no-cache',
   credential: 'same-origin',
   redirect:'follow',
-  referrerPolicy:'no-reffere',
+  referrerPolicy:'no-referrer',
   headers:{
     'Content-Type':'application/json; charset=UTF-8'
   }
 }
 export const tiger = async (options = {}) => {
   const {url, ...restOptions} = {...defaultOptions, ...options,headers:{...(defaultOptions.headers ?? {}), ...(options.headers ?? {})}}
-  console.log(restOptions);
+  // console.log(restOptions);
   let response = await fetch(url,restOptions)
   if(response.ok){
     response.data = await response.json()
@@ -22,13 +22,13 @@ export const tiger = async (options = {}) => {
   return response;
 }
 tiger.get = (url,options) => {
-  tiger({
+  return tiger({
     url,
     ...options
   })
 }
 tiger.post = (url,body,options)=>{
-  tiger({
+  return tiger({
     mtehod: 'POST',
     url,
     body:JSON.stringify(body),
@@ -36,7 +36,7 @@ tiger.post = (url,body,options)=>{
   })
 }
 tiger.put = (url,body,options)=>{
-  tiger({
+  return tiger({
     mtehod: 'PUT',
     url,
     body:JSON.stringify(body),
@@ -44,7 +44,7 @@ tiger.put = (url,body,options)=>{
   })
 }
 tiger.delete = (url,options)=>{
-  tiger({
+  return tiger({
     mtehod: 'DELETE',
     url,
     ...options
