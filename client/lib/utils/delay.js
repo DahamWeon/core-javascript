@@ -6,7 +6,7 @@ const first = getNode('.first');
 function delay(callback,timeout=1000){
   setTimeout(callback,timeout);
 }
-
+/*
 delay(()=>{
   first.style.top = '-100px';
   delay(()=>{
@@ -17,7 +17,7 @@ delay(()=>{
     })  
   })
 })
-
+*/
 const defaultOptions = {
   shouldReject: false,
   timeout: 1000,
