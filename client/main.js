@@ -1,5 +1,5 @@
 /* global gsap */
-import { insertLast,tiger,delayP, getNode, renderUserCard, changeColor,renderSpinner } from "./lib/index.js";
+import { insertLast,tiger,delayP, getNode as $, renderUserCard, changeColor,renderSpinner,renderEmptyCard } from "./lib/index.js";
 
 // rendingUserList
 // ajax get user List
@@ -12,13 +12,13 @@ import { insertLast,tiger,delayP, getNode, renderUserCard, changeColor,renderSpi
 // 3. 만들어진 함수 안에 createUserCard를 던진다
 // 4. renderUserCard 함수를 사용했을 때 랜더링이 잘 되게 한다
 
-const userCardContainer = getNode('.user-card-inner');
+const userCardContainer = $('.user-card-inner');
 async function rendingUserList(){
   renderSpinner(userCardContainer);
   
   try{
     await delayP(2000)
-    getNode('.loadingSpinner').remove();
+    $('.loadingSpinner').remove();
     let response = await tiger.get('https://jsonplaceholder.typicode.com/users');
     let userData = response.data;
     userData.forEach(data => renderUserCard(userCardContainer,data))
@@ -31,7 +31,7 @@ async function rendingUserList(){
       stagger: 0.2    // stagger: 시차를 주다
     })
   }catch(err){
-    console.log(err)
+    renderEmptyCard(userCardContainer);
   }
 }
 
